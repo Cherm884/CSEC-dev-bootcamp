@@ -156,12 +156,11 @@ function handleTodoClick(e) {
 
     
     if (item.classList.contains('delete-btn')) {
-        
-        li.remove();
-        
-        
-        removeLocalTodo(todoId);
-        updateStats();
+        if (confirm('Are you sure you want to delete this task?')) {
+            li.remove();
+            removeLocalTodo(todoId);
+            updateStats();
+        }
     }
 }
 
