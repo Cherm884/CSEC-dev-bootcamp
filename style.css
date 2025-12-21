@@ -1,0 +1,169 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: white;
+    width: 100%;
+    max-width: 450px;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+#todo-input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#todo-input:focus {
+    border-color: #6c5ce7;
+}
+
+#add-btn {
+    padding: 10px 15px;
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#add-btn:hover {
+    background-color: #5a4ad1;
+}
+
+
+#add-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background-color: #9a86e6;
+}
+
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+
+ul {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.todo-item {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.todo-text {
+    flex: 1;
+    margin-right: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+
+.completed .todo-text {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+
+.action-btn {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 0.8rem;
+    transition: 0.2s;
+}
+
+.complete-btn {
+    background-color: #00b894;
+    color: white;
+}
+
+.complete-btn:hover {
+    background-color: #019f7f;
+}
+
+.delete-btn {
+    background-color: #ff7675;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #e66767;
+}
+
+
+#clear-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff7675;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#clear-btn:hover {
+    background-color: #d63031;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.empty-msg {
+    text-align: center;
+    color: #666;
+    margin-top: 10px;
+    font-style: italic;
+}

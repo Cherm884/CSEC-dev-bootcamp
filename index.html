@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List App</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="style">
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <h1>Todo List App</h1>
+        </header>
+
+        
+        <div class="input-section">
+            <input type="text" id="todo-input" placeholder="Type a new task here...">
+            <button id="add-btn" disabled><i class="fas fa-plus"></i> Add Todo</button>
+        </div>
+
+        
+        <div class="stats-container">
+            <p>Total Tasks: <span id="total-count">0</span></p>
+            <p>Completed: <span id="completed-count">0</span></p>
+        </div>
+
+        
+        <ul id="todo-list">
+            
+        </ul>
+
+        <p id="empty-msg" class="empty-msg">No todos yet. Add your first task!</p>
+
+        
+        <button id="clear-btn" class="hidden">Clear All Tasks</button>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
